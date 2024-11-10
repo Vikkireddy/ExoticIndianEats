@@ -1,0 +1,45 @@
+.discover-main {
+    background-color: #F2F2F2;
+    padding-bottom: 5%;
+}
+.discover {
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.discovery-row1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5%;
+    justify-content: center;
+    width: 100%;
+}
+.discovery-row1-card {
+    margin-right: 1.5%;
+    width: 100%;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    /*background-color: black;*/
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media only screen and (max-width: 768px) {
+    .discovery-row1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 80%;
+    }
+    .discovery-row1-card {
+        margin-bottom: 5%;
+        margin-right: 0px;
+    }
+}

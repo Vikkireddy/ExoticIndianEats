@@ -1,0 +1,115 @@
+/* HomeAboutUs.css */
+
+.home-about-us {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.home-about-us-card1 {
+    margin-right: 1.5%;
+    margin-top: 5%;
+    max-width: 30%;
+    min-width: 25%;
+    background-color: #61dafb;
+}
+
+.home-about-us-card2 {
+    position: relative;
+    max-width: 30%;
+    min-width: 25%;
+    z-index: 0;
+}
+
+/* Third Card for About Us Section */
+/* Third Card for About Us Section */
+.home-about-us-card3 {
+    position: relative;
+    background-color: #F2F2F2;
+    max-width: 100%;
+    min-width: 35%;
+    padding: 30px;
+    box-shadow: 0px 20px 85px rgba(0, 0, 0, 0.1);
+    margin-left: -100px; /* Shift card to overlap the second image */
+    margin-top: 55%; /* Move card down to match the desired positioning */
+    z-index: 2;
+    /* Adjusting the cut to only affect the top-right corner */
+    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 60px, 100% 100%, 0% 100%);
+}
+
+.about-us-content {
+    text-align: left;
+}
+
+.about-us-content h3 {
+    font-size: 36px;
+    color: #A26100;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-weight: 700;
+    line-height:normal;
+    margin-bottom: 10px;
+}
+
+.about-us-content h1 {
+    font-size: 28px; /* Adjust size if needed */
+    color: #1C1C1C;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    text-align: left; /* Ensure text alignment */
+    white-space: nowrap; /* Prevent line break */
+    overflow: hidden; /* Optional: Ensure overflow is hidden */
+    text-overflow: ellipsis; /* Optional: If text exceeds the card, display ellipsis */
+}
+
+.about-us-content p {
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.read-more-link {
+    display: inline-flex; /* Flexbox for aligning the text and arrow in a line */
+    align-items: center; /* Align items vertically centered */
+    color: #A26100;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    text-align: left; /* Ensure left alignment */
+}
+
+.read-more-link span {
+    font-size: 24px;
+    margin-left: 5px; /* Space between text and arrow */
+    transition: margin-left 0.3s ease;
+}
+
+.read-more-link:hover span {
+    margin-left: 10px; /* Subtle animation when hovered */
+}
+.home-about-us-card3-wrapper {
+    position: relative;
+    min-width: 30%;
+    max-width: 100%;
+}
+
+.diagonal-lines {
+        position: absolute;
+        top: 83%;
+        left:68%;
+        bottom: 20%;
+        right: 40%;   /* Adjust to align with the card */
+        z-index: 1;     /* Ensure it's behind the card */
+        width: 150px;
+        height: auto;
+        opacity: 0.7;
+}
+
+.read-more-link:hover span {
+    margin-left: 10px;
+}

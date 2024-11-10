@@ -1,0 +1,274 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('../Assets/Hero.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-top: 46px;
+    position: relative;
+    width: 100%;
+}
+
+.hamburger-logo {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Logo */
+.logo {
+    width: 234px;
+    height: 72px;
+    flex-shrink: 0;
+    /*padding-left: 135px;*/
+}
+
+/* Navigation */
+.nav-bar {
+    display: flex;
+    gap: 10px 40px;
+}
+
+.nav-bar p {
+    color: #000;
+    font-family: "Poppins", Serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Biryani Image */
+.biryani-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.biryani-image img {
+    width: 580px;
+    height: auto;
+    margin-right: 50px;
+}
+
+/* Home Page Text */
+.home-page-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 135px;
+    text-align: left;
+}
+
+.welcome-text {
+    font-size: 36px;
+    padding-bottom: 12px;
+    font-style: normal;
+    margin: 0;
+    font-weight: 400;
+    color: #A26100;
+    font-family: "Dancing Script", cursive;
+}
+
+.tag-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 50px;
+    padding-top: 0px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.desc {
+    color: #808080;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        width: 100%;
+        height: 220vh;
+        background: url('../Assets/Hero.png') center/cover no-repeat;
+    }
+    .header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .content {
+        flex-direction: column; /* Stack image and text vertically */
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .biryani-image {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .biryani-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .home-page-text {
+        order: 2;
+        /*text-align: center;*/
+        width: 100%;
+    }
+
+    .welcome-text {
+        font-size: 28px;
+        width: 100%;
+        height: auto;
+    }
+
+    .tag-text {
+        font-size: 42px;
+        width: 100%;
+        height: auto;
+    }
+
+    .desc {
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        height: 170vh;
+        background: url('../Assets/Hero.png') center/cover no-repeat;
+    }
+    .header {
+        padding: 20px;
+        justify-content: left;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: -5px;
+    }
+    .hamburger-icon img {
+        padding: 10px 5px 10px 15px;
+        border-radius: 0px 60px 60px 0px;
+        background: rgba(0, 0, 0, 0.50);
+    }
+    .logo {
+        margin-left: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        display: flex;
+        margin-top: 0;
+    }
+
+    .biryani-image {
+        order: 1;
+        justify-content: center;
+    }
+
+    .biryani-image img {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    .home-page-text {
+        order: 2;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .welcome-text {
+        font-size: 24px;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .tag-text {
+        font-size: 36px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}

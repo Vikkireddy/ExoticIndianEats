@@ -1,0 +1,55 @@
+.recommend-menu {
+   background-color: #f5f5f5;
+        padding: 5%;
+
+}
+.recommend-menu-text {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+}
+.menu-list {
+        background: white;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 40%;
+}
+.menu-img {
+    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 60px, 100% 100%, 0% 100%);
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+}
+.menu-wrapper {
+    margin-left: 3%;
+    position: relative;
+    margin-bottom: 10%;
+}
+.menu-card {
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    max-height: 40%;
+    top: 20%;
+    /*right: 3%;*/
+}
+.recom-diagonal-lines {
+    position: absolute;
+    top: -10%;
+    left:18%;
+    bottom: 20%;
+    z-index: 0;     /* Ensure it's behind the card */
+    width: 150px;
+    height: auto;
+    opacity: 0.7;
+}
+.vertical-lines {
+    position: absolute;
+    top: 83%;
+    left:70%;
+    bottom: 20%;
+    z-index: 0;     /* Ensure it's behind the card */
+    width: 150px;
+    height: auto;
+    opacity: 0.7;
+}
