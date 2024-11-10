@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --color-black: #000000;
+    --nav-link-active-color : #A26100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* navbar starts */
+
+.navbar {
+    padding: 10px 6rem !important;
+}
+.navbar .nav-links {
+    color: var(--color-black);
+    font-size: var(--font-size-16);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-left: 24px;
+    padding: 0.5rem 0 !important;
+}
+.navbar .nav-links.active {
+    color: var(--nav-link-active-color) !important;
+    box-shadow: 0 2px 0 var(--nav-link-active-color);
+}
+
+/* Footer starts */
+
+
+
+/* Footer ends */
